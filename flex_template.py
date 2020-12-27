@@ -5,7 +5,7 @@ main_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/lFq9NTg.jpg",
+        "url": "https://i.imgur.com/BsZL2ak.jpg",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -18,8 +18,8 @@ main_menu = {
             "type": "button",
             "action": {
               "type": "message",
-              "label": "介紹與說明",
-              "text": "功能介紹與說明"
+              "label": "蠟燭位置",
+              "text": "candle"
             },
             "height": "md",
             "color": "#ff9900",
@@ -33,7 +33,7 @@ main_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/V2tkpQb.png",
+        "url": "https://i.imgur.com/dXfYsYT.jpg",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -46,8 +46,8 @@ main_menu = {
             "type": "button",
             "action": {
               "type": "message",
-              "label": "即時查詢",
-              "text": "查詢即時匯率"
+              "label": "祖先位置",
+              "text": "spirit"
             },
             "height": "md",
             "color": "#ff6666",
@@ -61,7 +61,7 @@ main_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/nQaCDXh.png",
+        "url": "https://i.imgur.com/IAkkn7J.jpg",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -74,39 +74,11 @@ main_menu = {
             "type": "button",
             "action": {
               "type": "message",
-              "label": "近期趨勢圖",
-              "text": "查詢趨勢走向"
+              "label": "其他（還沒有）",
+              "text": "others"
             },
             "height": "md",
             "color": "#ff66b3",
-            "style": "primary"
-          }
-        ],
-        "spacing": "lg"
-      }
-    },
-    {
-      "type": "bubble",
-      "hero": {
-        "type": "image",
-        "url": "https://i.imgur.com/UrSkoW4.png",
-        "size": "full",
-        "aspectMode": "fit",
-        "aspectRatio": "1.25:1"
-      },
-      "footer": {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [
-          {
-            "type": "button",
-            "action": {
-              "type": "message",
-              "label": "推薦與否",
-              "text": "是否推薦兌幣"
-            },
-            "height": "md",
-            "color": "#b366ff",
             "style": "primary"
           }
         ],
