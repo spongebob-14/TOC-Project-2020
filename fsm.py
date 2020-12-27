@@ -39,6 +39,12 @@ class TocMachine(GraphMachine):
         text=event.message.text
         return text.lower() == "menu"
 
+    
+    def on_enter_menu(self, event):
+        print("I'm entering menu")
+        reply_token = event.reply_token
+        send_text_message(reply_token, "Please select the topic you want to know!")
+
 
     def on_enter_spirit(self, event):
         print("I'm entering spirit")

@@ -14,12 +14,15 @@ load_dotenv()
 
 
 machine = TocMachine(
-    states=["init", "candle", "spirit"],
+    states=["init", "candle", "spirit",
+            "spirit_dawn","spirit_prairie","spirit_forest","spirit_valley","spirit_wasteland","spirit_vault",
+            "candle_dawn","candle_prairie","candle_forest","candle_valley","candle_wasteland","candle_vault"
+            ],
     transitions=[
         {
             "trigger": "advance",
             "source": "init",
-            "dest": "candel",
+            "dest": "candle",
             "conditions": "is_going_to_candle",
         },
         {
@@ -186,10 +189,10 @@ def webhook_handler():
 
 
 
-
 @app.route("/show-fsm", methods=["GET"])
 def show_fsm():
     machine.get_graph().draw("fsm.png", prog="dot", format="png")
+    print("get graph\n")
     return send_file("fsm.png", mimetype="image/png")
 
 
