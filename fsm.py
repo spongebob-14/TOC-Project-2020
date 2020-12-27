@@ -53,7 +53,7 @@ class TocMachine(GraphMachine):
         print("I'm entering menu")
         channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
         line_bot_api = LineBotApi(channel_access_token)
-        message = message_template.main_menu
+        message = flex_template.main_menu
         message_to_reply = FlexSendMessage("開啟主選單", message)
         line_bot_api.reply_message(reply_token, message_to_reply)
         #reply_token = event.reply_token
