@@ -51,12 +51,13 @@ class TocMachine(GraphMachine):
     
     def on_enter_menu(self, event):
         print("I'm entering menu")
+        reply_token = event.reply_token
         channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
         line_bot_api = LineBotApi(channel_access_token)
         message = flex_template.main_menu
         message_to_reply = FlexSendMessage("開啟主選單", message)
         line_bot_api.reply_message(reply_token, message_to_reply)
-        #reply_token = event.reply_token
+        
         #send_flex_message(reply_token, "Please select the topic you want to know!",flex_template.main_menu)
 
     def on_enter_spirit(self, event):
