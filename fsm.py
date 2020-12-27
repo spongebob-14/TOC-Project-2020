@@ -51,17 +51,11 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         send_text_message(reply_token, "Please select the map you want to know!")
 
-    def on_exit_spirit(self):
-        print("Leaving spirit")
-
     def on_enter_candle(self, event):
         print("I'm entering candle")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "Please select the map you want to know!")
-
-    def on_exit_candle(self):
-        print("Leaving candle")
 
 ###################################################################################
     def on_enter_spirit_dawn(self, event):
@@ -106,7 +100,7 @@ class TocMachine(GraphMachine):
         print("I'm entering candle_dawn")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "here is the inf. of dawn")
+        send_text_message(reply_token, "candl run for dawn:https://www.youtube.com/watch?v=FkzpNHTANfs")
 
     def on_enter_candle_prairie(self, event):
         print("I'm entering candle_prairie")
