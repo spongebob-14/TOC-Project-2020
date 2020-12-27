@@ -95,7 +95,7 @@ map_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/lFq9NTg.jpg",
+        "url": "https://i.imgur.com/oMmcD4j.jpg",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -123,7 +123,7 @@ map_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/V2tkpQb.png",
+        "url": "https://i.imgur.com/79VO6Z9.jpg",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -151,7 +151,7 @@ map_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/UrSkoW4.png",
+        "url": "https://i.imgur.com/p8nhl50.jpg",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -179,7 +179,7 @@ map_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/UrSkoW4.png",
+        "url": "https://i.imgur.com/w4MosOn.jpg",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -207,7 +207,7 @@ map_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/UrSkoW4.png",
+        "url": "https://i.imgur.com/yNtqZYR.png",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"
@@ -235,7 +235,7 @@ map_menu = {
       "type": "bubble",
       "hero": {
         "type": "image",
-        "url": "https://i.imgur.com/UrSkoW4.png",
+        "url": "https://i.imgur.com/Taie8gn.png",
         "size": "full",
         "aspectMode": "fit",
         "aspectRatio": "1.25:1"

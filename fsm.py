@@ -63,13 +63,20 @@ class TocMachine(GraphMachine):
     def on_enter_spirit(self, event):
         print("I'm entering spirit")
         reply_token = event.reply_token
-        send_text_message(reply_token, "Please select the map you want to know!")
+        channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
+        line_bot_api = LineBotApi(channel_access_token)
+        message = flex_template.map_menu
+        message_to_reply = FlexSendMessage("Please select the map you want to know!", message)
+        line_bot_api.reply_message(reply_token, message_to_reply)
 
     def on_enter_candle(self, event):
         print("I'm entering candle")
-
         reply_token = event.reply_token
-        send_text_message(reply_token, "Please select the map you want to know!")
+        channel_access_token = os.getenv("LINE_CHANNEL_ACCESS_TOKEN", None)
+        line_bot_api = LineBotApi(channel_access_token)
+        message = flex_template.map_menu
+        message_to_reply = FlexSendMessage("Please select the map you want to know!", message)
+        line_bot_api.reply_message(reply_token, message_to_reply)
 
 ###################################################################################
     def on_enter_spirit_dawn(self, event):
