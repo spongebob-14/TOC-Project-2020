@@ -69,20 +69,26 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the inf. of prairie")
 
-    def on_enter_spirit_dawn(self, event):
-        print("I'm entering spirit_dawn")
+    def on_enter_spirit_forest(self, event):
+        print("I'm entering spirit_forest")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the inf. of dawn")
 
-    def on_enter_spirit_dawn(self, event):
-        print("I'm entering spirit_dawn")
+    def on_enter_spirit_valley(self, event):
+        print("I'm entering spirit_valley")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the inf. of dawn")
 
-    def on_enter_spirit_dawn(self, event):
-        print("I'm entering spirit_dawn")
+    def on_enter_spirit_wasteland(self, event):
+        print("I'm entering spirit_wasteland")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "here is the inf. of dawn")
+
+    def on_enter_spirit_vault(self, event):
+        print("I'm entering spirit_vault")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the inf. of dawn")

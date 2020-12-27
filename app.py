@@ -107,7 +107,7 @@ machine = TocMachine(
             "conditions": "is_going_to_menu",
         },
     ],
-    initial="user",
+    initial="init",
     auto_transitions=False,
     show_conditions=True,
 )
