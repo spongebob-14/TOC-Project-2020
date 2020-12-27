@@ -23,13 +23,13 @@ class TocMachine(GraphMachine):
         text=event.message.text
         return text.lower() == "prairie"
 
+    def is_going_to_forest(self, event):
+        text=event.message.text
+        return text.lower() == "forest"
+
     def is_going_to_valley(self, event):
         text=event.message.text
         return text.lower() == "valley"
-
-    def is_going_to_wasteland(self, event):
-        text=event.message.text
-        return text.lower() == "wasteland"
 
     def is_going_to_wasteland(self, event):
         text=event.message.text
@@ -130,4 +130,4 @@ class TocMachine(GraphMachine):
         print("I'm entering candle_vault")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "here is the inf. of dawn")
+        send_text_message(reply_token, "candle run for vault:https://www.youtube.com/watch?v=dCwAZ0PSoB0")
