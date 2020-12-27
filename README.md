@@ -55,6 +55,11 @@ python3 app.py
 ## Finite State Machine
 ![fsm](./img/fsm.png)
 
+* two kind of questions, for candle or spirit
+* in candle state, input the map name return the position of candles in that map
+* in spirit stat, input the map name return the position of spirits in that map
+
+
 ## Usage
 The initial state is set to `user`.
 
