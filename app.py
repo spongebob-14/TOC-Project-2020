@@ -22,13 +22,13 @@ machine = TocMachine(
     transitions=[
         {
             "trigger": "advance",
-            "source": "menu",
+            "source": "*",
             "dest": "candle",
             "conditions": "is_going_to_candle",
         },
         {
             "trigger": "advance",
-            "source": "menu",
+            "source": "*",
             "dest": "spirit",
             "conditions": "is_going_to_spirit",
         },
@@ -184,7 +184,7 @@ def webhook_handler():
         print(f"REQUEST BODY: \n{body}")
         response = machine.advance(event)
         if response == False:
-            send_text_message(event.reply_token, "Not Entering any State")
+            send_text_message(event.reply_token, "click the meun if you're confused")
 
     return "OK"
 

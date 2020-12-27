@@ -112,7 +112,7 @@ map_menu = {
               "text": "dawn"
             },
             "height": "md",
-            "color": "#ff9900",
+            "color": "#e5d4f8",
             "style": "primary"
           }
         ],
@@ -140,7 +140,7 @@ map_menu = {
               "text": "prairie"
             },
             "height": "md",
-            "color": "#ff6666",
+            "color": "#c4fbd1",
             "style": "primary"
           }
         ],
@@ -168,7 +168,7 @@ map_menu = {
               "text": "forest"
             },
             "height": "md",
-            "color": "#b366ff",
+            "color": "#8ae4f3",
             "style": "primary"
           }
         ],
@@ -196,7 +196,7 @@ map_menu = {
               "text": "valley"
             },
             "height": "md",
-            "color": "#b366ff",
+            "color": "#fb735a",
             "style": "primary"
           }
         ],
@@ -224,7 +224,7 @@ map_menu = {
               "text": "wasteland"
             },
             "height": "md",
-            "color": "#b366ff",
+            "color": "#42b653",
             "style": "primary"
           }
         ],
@@ -252,7 +252,7 @@ map_menu = {
               "text": "vault"
             },
             "height": "md",
-            "color": "#b366ff",
+            "color": "#3461db",
             "style": "primary"
           }
         ],
