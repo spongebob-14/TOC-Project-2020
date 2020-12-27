@@ -100,25 +100,25 @@ class TocMachine(GraphMachine):
         print("I'm entering candle_dawn")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "candl run for dawn:https://www.youtube.com/watch?v=FkzpNHTANfs")
+        send_text_message(reply_token, "candle run for dawn:https://www.youtube.com/watch?v=FkzpNHTANfs")
 
     def on_enter_candle_prairie(self, event):
         print("I'm entering candle_prairie")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "here is the inf. of prairie")
+        send_text_message(reply_token, "candle run for prairie:https://www.youtube.com/watch?v=sSxMKaOSm5U")
 
     def on_enter_candle_forest(self, event):
         print("I'm entering candle_forest")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "here is the inf. of dawn")
+        send_text_message(reply_token, "candle run for forest on Mon.,Wed.,Fri.,Sun.:https://www.youtube.com/watch?v=9WU8KHntBks \ncandle run for forest on Tue.,Thu.,Sat.:https://www.youtube.com/watch?v=iDkMlVjObXc")
 
     def on_enter_candle_valley(self, event):
         print("I'm entering candle_valley")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "here is the inf. of dawn")
+        send_text_message(reply_token, "candle run for valley:https://www.youtube.com/watch?v=swP1Pc1pZlE")
 
     def on_enter_candle_wasteland(self, event):
         print("I'm entering candle_wasteland")

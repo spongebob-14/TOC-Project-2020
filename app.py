@@ -104,7 +104,7 @@ machine = TocMachine(
             "conditions": "is_going_to_vault",
         },
         {
-            "trigger": "go_back_to_menu",
+            "trigger": "advance",
             "source": "*",
             "dest": "init",
             "conditions": "is_going_to_menu",
