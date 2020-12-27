@@ -108,6 +108,13 @@ def webhook_handler():
 
     return "OK"
 
+@handler.add(MessageEvent, message=TextMessage)
+def echo(event):
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(text=event.message.text)
+    )
+
 
 @app.route("/show-fsm", methods=["GET"])
 def show_fsm():
