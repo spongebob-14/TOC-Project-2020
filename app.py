@@ -3,7 +3,7 @@ import sys
 
 from flask import Flask, jsonify, request, abort, send_file
 from dotenv import load_dotenv
-from linebot import LineBotApi, WebhookParser, WebhookHandler
+from linebot import LineBotApi, WebhookParser
 from linebot.exceptions import InvalidSignatureError
 from linebot.models import MessageEvent, TextMessage, TextSendMessage
 
@@ -14,21 +14,98 @@ load_dotenv()
 
 
 machine = TocMachine(
-    states=["user", "state1", "state2"],
+    states=["init", "candle", "spirit"],
     transitions=[
         {
             "trigger": "advance",
-            "source": "user",
-            "dest": "state1",
-            "conditions": "is_going_to_state1",
+            "source": "init",
+            "dest": "candel",
+            "conditions": "is_going_to_candle",
         },
         {
             "trigger": "advance",
-            "source": "user",
-            "dest": "state2",
-            "conditions": "is_going_to_state2",
+            "source": "init",
+            "dest": "spirit",
+            "conditions": "is_going_to_spirit",
         },
-        {"trigger": "go_back", "source": ["state1", "state2"], "dest": "user"},
+        {
+            "trigger": "advance",
+            "source": "spirit",
+            "dest": "spirit_dawn",
+            "conditions": "is_going_to_dawn",
+        },
+        {
+            "trigger": "advance",
+            "source": "spirit",
+            "dest": "spirit_prairie",
+            "conditions": "is_going_to_prairie",
+        },
+        {
+            "trigger": "advance",
+            "source": "spirit",
+            "dest": "spirit_forest",
+            "conditions": "is_going_to_forest",
+        },
+        {
+            "trigger": "advance",
+            "source": "spirit",
+            "dest": "spirit_valley",
+            "conditions": "is_going_to_valley",
+        },
+        {
+            "trigger": "advance",
+            "source": "spirit",
+            "dest": "spirit_wasteland",
+            "conditions": "is_going_to_wasteland",
+        },
+        {
+            "trigger": "advance",
+            "source": "spirit",
+            "dest": "spirit_vault",
+            "conditions": "is_going_to_vault",
+        },
+        {
+            "trigger": "advance",
+            "source": "candle",
+            "dest": "candle_dawn",
+            "conditions": "is_going_to_dawn",
+        },
+        {
+            "trigger": "advance",
+            "source": "candle",
+            "dest": "candle_prairie",
+            "conditions": "is_going_to_prairie",
+        },
+        {
+            "trigger": "advance",
+            "source": "candle",
+            "dest": "candle_forest",
+            "conditions": "is_going_to_forest",
+        },
+        {
+            "trigger": "advance",
+            "source": "candle",
+            "dest": "candle_valley",
+            "conditions": "is_going_to_valley",
+        },
+        {
+            "trigger": "advance",
+            "source": "candle",
+            "dest": "candle_wasteland",
+            "conditions": "is_going_to_wasteland",
+        },
+        {
+            "trigger": "advance",
+            "source": "candle",
+            "dest": "candle_vault",
+            "conditions": "is_going_to_vault",
+        },
+        {
+            "trigger": "go_back_to_menu",
+            "source": "*",
+            "dest": "init",
+            "conditions": "is_going_to_menu",
+        },
     ],
     initial="user",
     auto_transitions=False,
@@ -50,7 +127,6 @@ if channel_access_token is None:
 
 line_bot_api = LineBotApi(channel_access_token)
 parser = WebhookParser(channel_secret)
-handler = WebhookHandler(channel_secret)
 
 @app.route("/callback", methods=["POST"])
 def callback():
@@ -108,12 +184,7 @@ def webhook_handler():
 
     return "OK"
 
-@handler.add(MessageEvent, message=TextMessage)
-def echo(event):
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text=event.message.text)
-    )
+
 
 
 @app.route("/show-fsm", methods=["GET"])
