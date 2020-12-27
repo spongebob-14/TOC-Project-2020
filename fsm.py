@@ -84,37 +84,43 @@ class TocMachine(GraphMachine):
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the position of spirit in dawn:\nhttps://www.youtube.com/watch?v=pEpTD2MQHII")
+        self.go_back()
 
     def on_enter_spirit_prairie(self, event):
         print("I'm entering spirit_prairie")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the position of spirit in prairie:\nhttps://www.youtube.com/watch?v=6T9eU6NI40c")
-
+        self.go_back()
+        
     def on_enter_spirit_forest(self, event):
         print("I'm entering spirit_forest")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the position of spirit in forest:\nhttps://www.youtube.com/watch?v=fS79CNXegoo")
-
+        self.go_back()
+        
     def on_enter_spirit_valley(self, event):
         print("I'm entering spirit_valley")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the position of spirit in valley:\nhttps://www.youtube.com/watch?v=7dnSrsYnA_4")
-
+        self.go_back()
+        
     def on_enter_spirit_wasteland(self, event):
         print("I'm entering spirit_wasteland")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the position of spirit in wasteland:\nhttps://www.youtube.com/watch?v=NeKvsyIZT58")
-
+        self.go_back()
+        
     def on_enter_spirit_vault(self, event):
         print("I'm entering spirit_vault")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the position of spirit in vault:\nhttps://www.youtube.com/watch?v=Ylx05jUcRIc")
-    
+        self.go_back()
+        
 #####################################################################################
 
     def on_enter_candle_dawn(self, event):
@@ -122,33 +128,40 @@ class TocMachine(GraphMachine):
 
         reply_token = event.reply_token
         send_text_message(reply_token, "candle run for dawn:\nhttps://www.youtube.com/watch?v=FkzpNHTANfs")
-
+        self.go_back()
+        
     def on_enter_candle_prairie(self, event):
         print("I'm entering candle_prairie")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "candle run for prairie:\nhttps://www.youtube.com/watch?v=sSxMKaOSm5U")
-
+        self.go_back()
+        
     def on_enter_candle_forest(self, event):
         print("I'm entering candle_forest")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "candle run for forest on Mon.,Wed.,Fri.,Sun.:\nhttps://www.youtube.com/watch?v=9WU8KHntBks \ncandle run for forest on Tue.,Thu.,Sat.:\nhttps://www.youtube.com/watch?v=iDkMlVjObXc")
-
+        self.go_back()
+        
     def on_enter_candle_valley(self, event):
         print("I'm entering candle_valley")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "candle run for valley:\nhttps://www.youtube.com/watch?v=swP1Pc1pZlE")
-
+        self.go_back()
+        
     def on_enter_candle_wasteland(self, event):
         print("I'm entering candle_wasteland")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "candle run for wasteland on Mon.,Wed.,Fri.:\nhttps://www.youtube.com/watch?v=swP1Pc1pZlE \ncandle run for wasteland on Tue.,Thu.,Sat.:\nhttps://www.youtube.com/watch?v=ULr1JlOV1eU \ncandle run for wasteland on Sun.:\nhttps://www.youtube.com/watch?v=y7H8C5uGW0o \ncandle run for ark in wasteland:\nhttps://www.youtube.com/watch?v=DJhBqg5fWks")
-
+        self.go_back()
+        
     def on_enter_candle_vault(self, event):
         print("I'm entering candle_vault")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "candle run for vault:\nhttps://www.youtube.com/watch?v=dCwAZ0PSoB0")
+        self.go_back()
+        

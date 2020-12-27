@@ -15,11 +15,17 @@ load_dotenv()
 
 
 machine = TocMachine(
-    states=["menu", "candle", "spirit",
+    states=["init","menu", "candle", "spirit",
             "spirit_dawn","spirit_prairie","spirit_forest","spirit_valley","spirit_wasteland","spirit_vault",
             "candle_dawn","candle_prairie","candle_forest","candle_valley","candle_wasteland","candle_vault"
             ],
     transitions=[
+        {
+            "trigger": "advance",
+            "source": "init",
+            "dest": "menu",
+            "conditions": "is_going_to_menu",
+        },
         {
             "trigger": "advance",
             "source": "*",
@@ -110,8 +116,17 @@ machine = TocMachine(
             "dest": "menu",
             "conditions": "is_going_to_menu",
         },
+        {
+            "trigger": "go_back",
+            "source": ["spirit_dawn", "spirit_prairie","spirit_forest","spirit_valley","spirit_wasteland","spirit_vault"],
+            "dest": "spirit"
+        },{
+            "trigger": "go_back",
+            "source": ["candle_dawn", "candle_prairie","candle_forest","candle_valley","candle_wasteland","candle_vault"],
+            "dest": "candle"
+        }
     ],
-    initial="menu",
+    initial="init",
     auto_transitions=False,
     show_conditions=True,
 )
