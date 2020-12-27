@@ -1,3 +1,4 @@
+import os
 from transitions.extensions import GraphMachine
 
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, FlexSendMessage
