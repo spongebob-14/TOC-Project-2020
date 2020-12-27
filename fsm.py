@@ -124,7 +124,7 @@ class TocMachine(GraphMachine):
         print("I'm entering candle_wasteland")
 
         reply_token = event.reply_token
-        send_text_message(reply_token, "here is the inf. of dawn")
+        send_text_message(reply_token, "candle run for wasteland on Mon.,Wed.,Fri.:https://www.youtube.com/watch?v=swP1Pc1pZlE \ncandle run for wasteland on Tue.,Thu.,Sat.:https://www.youtube.com/watch?v=ULr1JlOV1eU \ncandle run for wasteland on Sun.:https://www.youtube.com/watch?v=y7H8C5uGW0o \ncandle run for ark in wasteland:https://www.youtube.com/watch?v=DJhBqg5fWks")
 
     def on_enter_candle_vault(self, event):
         print("I'm entering candle_vault")
