@@ -38,6 +38,10 @@ class TocMachine(GraphMachine):
         text=event.message.text
         return text.lower() == "wasteland"
 
+    def is_going_to_vault(self, event):
+        text=event.message.text
+        return text.lower() == "vault"
+
     def is_going_to_menu(self, event):
         text=event.message.text
         return text.lower() == "menu"
