@@ -2,7 +2,7 @@ from transitions.extensions import GraphMachine
 
 from linebot.models import MessageEvent, TextMessage, TextSendMessage, FlexSendMessage
 
-from utils import send_text_message
+from utils import send_text_message,send_flex_message
 
 import flex_template
 
