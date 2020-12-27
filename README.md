@@ -1,4 +1,10 @@
-# assistant of game "sky: Children of light "
+# Assistant of Game "Sky: Children of the Light"
+
+## QR code
+![QR](./img/qr.png)
+
+## Interface
+![demo](./img/demo.jpg)
 
 ## Some main part of game
 * make friend and collaborate with other players
