@@ -50,8 +50,7 @@ class TocMachine(GraphMachine):
     def on_enter_menu(self, event):
         print("I'm entering menu")
         reply_token = event.reply_token
-        send_text_message(reply_token, FlexSendMessage("Please select the topic you want to know!",flex_template.main_menu))
-
+        send_flex_message(reply_token, "Please select the topic you want to know!",flex_template.main_menu)
 
     def on_enter_spirit(self, event):
         print("I'm entering spirit")
