@@ -8,35 +8,35 @@ class TocMachine(GraphMachine):
         self.machine = GraphMachine(model=self, **machine_configs)
 
     def is_going_to_candle(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "candle"
 
     def is_going_to_spirit(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "spirit"
 
     def is_going_to_dawn(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "dawn"
 
     def is_going_to_prairie(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "prairie"
 
     def is_going_to_valley(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "valley"
 
     def is_going_to_wasteland(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "wasteland"
 
     def is_going_to_wasteland(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "wasteland"
 
     def is_going_to_menu(self, event):
-        text=event.message.text()
+        text=event.message.text
         return text.lower() == "menu"
 
 
@@ -57,6 +57,7 @@ class TocMachine(GraphMachine):
     def on_exit_candle(self):
         print("Leaving candle")
 
+###################################################################################
     def on_enter_spirit_dawn(self, event):
         print("I'm entering spirit_dawn")
 
@@ -89,6 +90,44 @@ class TocMachine(GraphMachine):
 
     def on_enter_spirit_vault(self, event):
         print("I'm entering spirit_vault")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "here is the inf. of dawn")
+    
+#####################################################################################
+
+    def on_enter_candle_dawn(self, event):
+        print("I'm entering candle_dawn")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "here is the inf. of dawn")
+
+    def on_enter_candle_prairie(self, event):
+        print("I'm entering candle_prairie")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "here is the inf. of prairie")
+
+    def on_enter_candle_forest(self, event):
+        print("I'm entering candle_forest")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "here is the inf. of dawn")
+
+    def on_enter_candle_valley(self, event):
+        print("I'm entering candle_valley")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "here is the inf. of dawn")
+
+    def on_enter_candle_wasteland(self, event):
+        print("I'm entering candle_wasteland")
+
+        reply_token = event.reply_token
+        send_text_message(reply_token, "here is the inf. of dawn")
+
+    def on_enter_candle_vault(self, event):
+        print("I'm entering candle_vault")
 
         reply_token = event.reply_token
         send_text_message(reply_token, "here is the inf. of dawn")
