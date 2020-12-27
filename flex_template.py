@@ -192,8 +192,92 @@ map_menu = {
             "type": "button",
             "action": {
               "type": "message",
-              "label": "其他（目前沒有）",
-              "text": "menu"
+              "label": "雨林",
+              "text": "forest"
+            },
+            "height": "md",
+            "color": "#b366ff",
+            "style": "primary"
+          }
+        ],
+        "spacing": "lg"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/UrSkoW4.png",
+        "size": "full",
+        "aspectMode": "fit",
+        "aspectRatio": "1.25:1"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "霞谷",
+              "text": "valley"
+            },
+            "height": "md",
+            "color": "#b366ff",
+            "style": "primary"
+          }
+        ],
+        "spacing": "lg"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/UrSkoW4.png",
+        "size": "full",
+        "aspectMode": "fit",
+        "aspectRatio": "1.25:1"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "暮土",
+              "text": "wasteland"
+            },
+            "height": "md",
+            "color": "#b366ff",
+            "style": "primary"
+          }
+        ],
+        "spacing": "lg"
+      }
+    },
+    {
+      "type": "bubble",
+      "hero": {
+        "type": "image",
+        "url": "https://i.imgur.com/UrSkoW4.png",
+        "size": "full",
+        "aspectMode": "fit",
+        "aspectRatio": "1.25:1"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "禁閣",
+              "text": "vault"
             },
             "height": "md",
             "color": "#b366ff",
